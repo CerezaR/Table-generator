@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableGenerator", "TableGenerator\TableGenerator.csproj", "{4DE3B7BC-7949-42DA-A59E-530FE6C18A59}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TableGeneratorSetup", "TableGeneratorSetup\TableGeneratorSetup.vdproj", "{7AFCC83D-E160-46F3-A416-B04E0B4F0E2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DE3B7BC-7949-42DA-A59E-530FE6C18A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE3B7BC-7949-42DA-A59E-530FE6C18A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE3B7BC-7949-42DA-A59E-530FE6C18A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE3B7BC-7949-42DA-A59E-530FE6C18A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFCC83D-E160-46F3-A416-B04E0B4F0E2E}.Debug|Any CPU.ActiveCfg = Debug
+		{7AFCC83D-E160-46F3-A416-B04E0B4F0E2E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DB20254-77F1-49AF-9B54-2CF204132707}
+	EndGlobalSection
+EndGlobal

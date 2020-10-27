@@ -1,0 +1,15 @@
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\bin\Release\TableGenerator.exe.config
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\bin\Release\TableGenerator.exe
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\bin\Release\TableGenerator.pdb
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.csproj.ResolveComReference.cache
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\MainWindow.g.cs
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\App.g.cs
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator_MarkupCompile.cache
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator_MarkupCompile.lref
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\MainWindow.baml
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.g.resources
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.Properties.Resources.resources
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.csproj.GenerateResource.cache
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.exe
+C:\Users\Yura\Desktop\TableGenerator\TableGenerator\obj\Release\TableGenerator.pdb
