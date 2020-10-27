@@ -145,39 +145,42 @@ namespace TableGenerator
             } else
             {
                 string fileSavePath = getSaveFilePath();
-                Microsoft.Office.Interop.Excel.Workbook workbook = excelApp.Workbooks.Add();
-                Microsoft.Office.Interop.Excel.Worksheet worksheet = workbook.Worksheets[1];
-
-                worksheet.Name = "List of materials";
-                string[] header = new string[6] { "Type", "Dimensions", "Steal grade", "Heat Nr", "Certificate nr", "Link"};
-                for (int column = 1; column <= header.Length; column++)
+                if (fileSavePath != "")
                 {
-                    worksheet.Cells[1, column].Value = header[column - 1];
-                }
+                    Microsoft.Office.Interop.Excel.Workbook workbook = excelApp.Workbooks.Add();
+                    Microsoft.Office.Interop.Excel.Worksheet worksheet = workbook.Worksheets[1];
 
-                List<string> filesNames = StringCollectionLibrary.getNamesOfFilesFromPaths(this.filesPaths);
-                List<string[]> dataCollection = StringCollectionLibrary.getCollectionOfFormattedNames(filesNames);
-                for(int row = 0; row < dataCollection.Count; row++)
-                {
+                    worksheet.Name = "List of materials";
+                    string[] header = new string[6] { "Type", "Dimensions", "Steel grade", "Heat Nr", "Certificate nr", "Link" };
                     for (int column = 1; column <= header.Length; column++)
                     {
-                        if(column < 6)
-                        {
-                            worksheet.Cells[row + 2, column].Value = dataCollection[row][column - 1];
-                        }
-                        else
-                        {
-                            Microsoft.Office.Interop.Excel.Range excelCell = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[row + 2, column];
-                            worksheet.Hyperlinks.Add(excelCell, this.filesPaths[row], Type.Missing, this.filesPaths[row], this.filesPaths[row]);
-                            worksheet.Cells[row + 2, column].Value = this.filesPaths[row];
-                        }
+                        worksheet.Cells[1, column].Value = header[column - 1];
                     }
-                    
-                }
 
-                workbook.SaveAs(fileSavePath);
-                workbook.Close();
-                MessageBox.Show("File is saved sucessfully!");
+                    List<string> filesNames = StringCollectionLibrary.getNamesOfFilesFromPaths(this.filesPaths);
+                    List<string[]> dataCollection = StringCollectionLibrary.getCollectionOfFormattedNames(filesNames);
+                    for (int row = 0; row < dataCollection.Count; row++)
+                    {
+                        for (int column = 1; column <= header.Length; column++)
+                        {
+                            if (column < 6)
+                            {
+                                worksheet.Cells[row + 2, column].Value = dataCollection[row][column - 1];
+                            }
+                            else
+                            {
+                                Microsoft.Office.Interop.Excel.Range excelCell = (Microsoft.Office.Interop.Excel.Range)worksheet.Cells[row + 2, column];
+                                worksheet.Hyperlinks.Add(excelCell, this.filesPaths[row], Type.Missing, this.filesPaths[row], this.filesPaths[row]);
+                                worksheet.Cells[row + 2, column].Value = this.filesPaths[row];
+                            }
+                        }
+
+                    }
+
+                    workbook.SaveAs(fileSavePath);
+                    workbook.Close();
+                    MessageBox.Show("File is saved sucessfully!");
+                }
             }
         }
 
